@@ -1,12 +1,21 @@
 const express = require("express");
+const path = require("path");
+const exphbs = require("express-handlebars");
+
+const app = express();
 
 // MongoDB Connection
 const DB_Connection = require("./config/DB_Config");
 
-const app = express();
+// Public folder setup
+app.use("/public", express.static(path.join(__dirname, "public")));
+
+// Express-handlebars setup
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 
 app.get("/", (req, res, next) => {
-  res.send("Homepage");
+  res.render("index");
 });
 
 // Starting the server
