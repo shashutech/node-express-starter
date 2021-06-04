@@ -7,6 +7,9 @@ const app = express();
 // MongoDB Connection
 const DB_Connection = require("./config/DB_Config");
 
+// User model
+const User = require("./models/User");
+
 // Public folder setup
 app.use("/public", express.static(path.join(__dirname, "public")));
 
