@@ -18,7 +18,10 @@ app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 // Routes
+// Static Pages
 app.use("/", require("./routes/static"));
+// User Pages
+app.use("/users", require("./routes/user"));
 
 // Starting the server
 const PORT = process.env.PORT || 5000;
