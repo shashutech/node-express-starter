@@ -1,0 +1,69 @@
+<h3 class="text-center">Details about the project</h3>
+
+{{! DB Setup}}
+<div class="card card-body mt-3">
+  <h5>DB Setup</h5>
+  <p>Use your MongoDB connection URI in the file
+    <strong>config/DB_Config.js</strong></p>
+</div>
+
+{{! Route List }}
+<div class="card card-body mt-3">
+  <h5>Route List</h5>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Endpoints</th>
+        <th scope="col">Method</th>
+        <th scope="col">Controller</th>
+        <th scope="col">View</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">/</th>
+        <td>GET</td>
+        <td>static-controller.index</td>
+        <td>index</td>
+        <td>Landing page of the web app</td>
+      </tr>
+      <tr>
+        <th scope="row">/details</th>
+        <td>GET</td>
+        <td>static-controller.details</td>
+        <td>details</td>
+        <td>DB setup and other details</td>
+      </tr>
+      <tr>
+        <th scope="row">/users/login</th>
+        <td>GET</td>
+        <td>user-controller.login</td>
+        <td>users/login</td>
+        <td>Form for user login</td>
+      </tr>
+      <tr>
+        <th scope="row">/users/login</th>
+        <td>POST</td>
+        <td>user-controller.handleLogin</td>
+        <td>-</td>
+        <td>Handling user login functionality</td>
+      </tr>
+      <tr>
+        <th scope="row">/user/register</th>
+        <td>GET</td>
+        <td>user-controller.register</td>
+        <td>users/register</td>
+        <td>Form for user registeration</td>
+      </tr>
+      <tr>
+        <th scope="row">/users/register</th>
+        <td>POST</td>
+        <td>user-controller.handleRegistration</td>
+        <td>-</td>
+        <td>Handling user registeration functionality</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

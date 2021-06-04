@@ -14,9 +14,8 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
-app.get("/", (req, res, next) => {
-  res.render("index");
-});
+// Routes
+app.use("/", require("./routes/static"));
 
 // Starting the server
 const PORT = process.env.PORT || 5000;
