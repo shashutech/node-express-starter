@@ -2,12 +2,12 @@
 
 > A boilerplate for your next node and express web app. It follows **MVC** pattern. It can be used for both - REST API and fullstack web apps.
 
-_Note - Haven't implimented the registration and login logic as there can be multiple ways to do it. Eg- JWT, Passport-local_
+_Note - Haven't implimented the user registration and login logic as there can be multiple ways to do it. Eg- JWT, Passport-local_
 
 ---
 
-![Homepage](\public\images\homepage.png)
-![Details](\public\images\details.png)
+![Homepage](/public/images/homepage.png)
+![Details](/public/images/details.png)
 
 ## Installation
 
